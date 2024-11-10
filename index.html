@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime News Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="min-h-screen bg-gray-100">
+        <header class="bg-black text-white p-4">
+            <h1 class="text-3xl font-bold text-center mb-4">Anime News Hub</h1>
+            <nav class="flex justify-center space-x-4">
+                <button class="nav-button active" data-section="home">Home</button>
+                <button class="nav-button" data-section="noticias">Notícias</button>
+                <button class="nav-button" data-section="reviews">Reviews</button>
+                <button class="nav-button" data-section="calendario">Calendário</button>
+            </nav>
+        </header>
+
+        <main class="container mx-auto px-4 py-8">
+            <!-- Home Section -->
+            <section id="home" class="active-section">
+                <div class="slideshow relative h-400 mb-8 overflow-hidden rounded-lg shadow-lg">
+                    <div class="slide-container"></div>
+                    <div class="slide-nav"></div>
+                </div>
+
+                <div class="news-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+            </section>
+
+            <!-- Notícias Section -->
+            <section id="noticias" class="hidden">
+                <h2 class="text-2xl font-bold mb-4">Últimas Notícias</h2>
+            </section>
+
+            <!-- Reviews Section -->
+            <section id="reviews" class="hidden">
+                <h2 class="text-2xl font-bold mb-4">Reviews de Animes</h2>
+            </section>
+
+            <!-- Calendário Section -->
+            <section id="calendario" class="hidden">
+                <h2 class="text-2xl font-bold mb-4">Calendário de Lançamentos</h2>
+            </section>
+        </main>
+
+        <footer class="bg-black text-white p-4 mt-8">
+            <p class="text-center">&copy; 2023 Anime News Hub. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
